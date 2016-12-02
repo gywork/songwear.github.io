@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Songwear&#39;s Blog</title>
+  <subtitle>闷骚前端白羊男，单身。</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-11-29T03:19:45.297Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>songwear</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>09 GitHubPage搭建Hexo——Next主题增加Fork me on github</title>
+    <link href="http://yoursite.com/2016/11/23/09GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94Next%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0Fork%20me%20on%20github/"/>
+    <id>http://yoursite.com/2016/11/23/09GitHubPage搭建Hexo——Next主题增加Fork me on github/</id>
+    <published>2016-11-23T12:17:00.000Z</published>
+    <updated>2016-11-29T03:19:45.297Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果有需要在博客中增加【Fork me on github】彩带的读者，请参考此文章。</p>
+<h2 id="Fork-me-on-github"><a href="#Fork-me-on-github" class="headerlink" title="Fork me on github"></a>Fork me on github</h2><p>首先这个东西的名字叫做 Github Ribbons，效果及Github的教程，请<a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">点击</a>。</p>
+<p>使用方法及其简单，只需在上面的地址中选择你需要的样式，将代码插入到任意一个全局的模板文件中即可。不过，我使用的样式，貌似不太需要这个效果。有需要的可以尝试。</p>
+<a id="more"></a>
+<p>第一步：复制你需要的样式代码。</p>
+<p>第二步：找到主题目录下，<code>layout\_partials</code> ，我是把上面的代码放到 <code>header.swig</code> 的最后面，如下图：</p>
+<p>图片2</p>
+<p>就是这样。多简单。</p>
+<p>最终效果：</p>
+<p>以上。增加Fork me on github完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果有需要在博客中增加【Fork me on github】彩带的读者，请参考此文章。&lt;/p&gt;
+&lt;h2 id=&quot;Fork-me-on-github&quot;&gt;&lt;a href=&quot;#Fork-me-on-github&quot; class=&quot;headerlink&quot; title=&quot;Fork me on github&quot;&gt;&lt;/a&gt;Fork me on github&lt;/h2&gt;&lt;p&gt;首先这个东西的名字叫做 Github Ribbons，效果及Github的教程，请&lt;a href=&quot;https://github.com/blog/273-github-ribbons&quot;&gt;点击&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;使用方法及其简单，只需在上面的地址中选择你需要的样式，将代码插入到任意一个全局的模板文件中即可。不过，我使用的样式，貌似不太需要这个效果。有需要的可以尝试。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+      <category term="Hexo 建站" scheme="http://yoursite.com/tags/Hexo-%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>08 GitHubPage搭建Hexo——Next主题增加页面抖动</title>
+    <link href="http://yoursite.com/2016/11/23/08GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94Next%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0%E9%A1%B5%E9%9D%A2%E6%8A%96%E5%8A%A8/"/>
+    <id>http://yoursite.com/2016/11/23/08GitHubPage搭建Hexo——Next主题增加页面抖动/</id>
+    <published>2016-11-23T11:51:22.000Z</published>
+    <updated>2016-11-29T02:14:13.186Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果有需要我博客中的 <code>不要点我</code> 功能的读者，请参考此文章。</p>
+<h2 id="增加页面抖动效果"><a href="#增加页面抖动效果" class="headerlink" title="增加页面抖动效果"></a>增加页面抖动效果</h2><p>之前的名字叫做【High 一下】，改了一下名字，专治各种强迫症！只不过抖起来没完没了！不知道如何停止……</p>
+<p><strong>声明：功能非原创，感谢原作者。我只是互联网的搬运工。侵删。</strong></p>
+<a id="more"></a>
+<p>找到主题文件夹下 <code>layout\_partials</code> 的 <code>header.swig</code> 文件，在 <code>&lt;ul&gt;</code> 标签内部增加 <code>&lt;li&gt;&lt;/li&gt;</code> 标签，并将下面的代码粘贴到 <code>li</code> 标签内部，即可。<br>至于如何自定义音乐等细节问题，还没搞清楚。</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div></pre></td><td class="code"><pre><div class="line">&lt;a title=&quot;专治各种强迫症&quot; href=&apos;javascript:(function() &#123;</div><div class="line">    function c() &#123;</div><div class="line">        var e = document.createElement(&quot;link&quot;);</div><div class="line">        e.setAttribute(&quot;type&quot;, &quot;text/css&quot;);</div><div class="line">        e.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);</div><div class="line">        e.setAttribute(&quot;href&quot;, f);</div><div class="line">        e.setAttribute(&quot;class&quot;, l);</div><div class="line">        document.body.appendChild(e)</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function h() &#123;</div><div class="line">        var e = document.getElementsByClassName(l);</div><div class="line">        for (var t = 0; t &lt; e.length; t++) &#123;</div><div class="line">            document.body.removeChild(e[t])</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function p() &#123;</div><div class="line">        var e = document.createElement(&quot;div&quot;);</div><div class="line">        e.setAttribute(&quot;class&quot;, a);</div><div class="line">        document.body.appendChild(e);</div><div class="line">        setTimeout(function() &#123;</div><div class="line">            document.body.removeChild(e)</div><div class="line">        &#125;, 100)</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function d(e) &#123;</div><div class="line">        return &#123;</div><div class="line">            height : e.offsetHeight,</div><div class="line">            width : e.offsetWidth</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function v(i) &#123;</div><div class="line">        var s = d(i);</div><div class="line">        return s.height &gt; e &amp;&amp; s.height &lt; n &amp;&amp; s.width &gt; t &amp;&amp; s.width &lt; r</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function m(e) &#123;</div><div class="line">        var t = e;</div><div class="line">        var n = 0;</div><div class="line">        while (!!t) &#123;</div><div class="line">            n += t.offsetTop;</div><div class="line">            t = t.offsetParent</div><div class="line">        &#125;</div><div class="line">        return n</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function g() &#123;</div><div class="line">        var e = document.documentElement;</div><div class="line">        if (!!window.innerWidth) &#123;</div><div class="line">            return window.innerHeight</div><div class="line">        &#125; else if (e &amp;&amp; !isNaN(e.clientHeight)) &#123;</div><div class="line">            return e.clientHeight</div><div class="line">        &#125;</div><div class="line">        return 0</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function y() &#123;</div><div class="line">        if (window.pageYOffset) &#123;</div><div class="line">            return window.pageYOffset</div><div class="line">        &#125;</div><div class="line">        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function E(e) &#123;</div><div class="line">        var t = m(e);</div><div class="line">        return t &gt;= w &amp;&amp; t &lt;= b + w</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function S() &#123;</div><div class="line">        var e = document.createElement(&quot;audio&quot;);</div><div class="line">        e.setAttribute(&quot;class&quot;, l);</div><div class="line">        e.src = i;</div><div class="line">        e.loop = false;</div><div class="line">        e.addEventListener(&quot;canplay&quot;, function() &#123;</div><div class="line">            setTimeout(function() &#123;</div><div class="line">                x(k)</div><div class="line">            &#125;, 500);</div><div class="line">            setTimeout(function() &#123;</div><div class="line">                N();</div><div class="line">                p();</div><div class="line">                for (var e = 0; e &lt; O.length; e++) &#123;</div><div class="line">                    T(O[e])</div><div class="line">                &#125;</div><div class="line">            &#125;, 15500)</div><div class="line">        &#125;, true);</div><div class="line">        e.addEventListener(&quot;ended&quot;, function() &#123;</div><div class="line">            N();</div><div class="line">            h()</div><div class="line">        &#125;, true);</div><div class="line">        e.innerHTML = &quot; &lt;p&gt;If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.&lt;/p&gt; &lt;p&gt;&quot;;</div><div class="line">        document.body.appendChild(e);</div><div class="line">        e.play()</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function x(e) &#123;</div><div class="line">        e.className += &quot; &quot; + s + &quot; &quot; + o</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function T(e) &#123;</div><div class="line">        e.className += &quot; &quot; + s + &quot; &quot; + u[Math.floor(Math.random() * u.length)]</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    function N() &#123;</div><div class="line">        var e = document.getElementsByClassName(s);</div><div class="line">        var t = new RegExp(&quot;\\b&quot; + s + &quot;\\b&quot;);</div><div class="line">        for (var n = 0; n &lt; e.length; ) &#123;</div><div class="line">            e[n].className = e[n].className.replace(t, &quot;&quot;)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    var e = 30;</div><div class="line">    var t = 30;</div><div class="line">    var n = 350;</div><div class="line">    var r = 350;</div><div class="line">    var i = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3&quot;;</div><div class="line">    var s = &quot;mw-harlem_shake_me&quot;;</div><div class="line">    var o = &quot;im_first&quot;;</div><div class="line">    var u = [&quot;im_drunk&quot;, &quot;im_baked&quot;, &quot;im_trippin&quot;, &quot;im_blown&quot;];</div><div class="line">    var a = &quot;mw-strobe_light&quot;;</div><div class="line">    var f = &quot;//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css&quot;;</div><div class="line">    var l = &quot;mw_added_css&quot;;</div><div class="line">    var b = g();</div><div class="line">    var w = y();</div><div class="line">    var C = document.getElementsByTagName(&quot;*&quot;);</div><div class="line">    var k = null;</div><div class="line">    for (var L = 0; L &lt; C.length; L++) &#123;</div><div class="line">        var A = C[L];</div><div class="line">        if (v(A)) &#123;</div><div class="line">            if (E(A)) &#123;</div><div class="line">                k = A;</div><div class="line">                break</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    if (A === null) &#123;</div><div class="line">        console.warn(&quot;Could not find a node of the right size. Please try a different page.&quot;);</div><div class="line">        return</div><div class="line">    &#125;</div><div class="line">    c();</div><div class="line">    S();</div><div class="line">    var O = [];</div><div class="line">    for (var L = 0; L &lt; C.length; L++) &#123;</div><div class="line">        var A = C[L];</div><div class="line">        if (v(A)) &#123;</div><div class="line">            O.push(A)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;)()&apos;&gt;不要点我&lt;/a&gt;</div></pre></td></tr></table></figure>
+<p>以上。增加页面抖动效果完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果有需要我博客中的 &lt;code&gt;不要点我&lt;/code&gt; 功能的读者，请参考此文章。&lt;/p&gt;
+&lt;h2 id=&quot;增加页面抖动效果&quot;&gt;&lt;a href=&quot;#增加页面抖动效果&quot; class=&quot;headerlink&quot; title=&quot;增加页面抖动效果&quot;&gt;&lt;/a&gt;增加页面抖动效果&lt;/h2&gt;&lt;p&gt;之前的名字叫做【High 一下】，改了一下名字，专治各种强迫症！只不过抖起来没完没了！不知道如何停止……&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;声明：功能非原创，感谢原作者。我只是互联网的搬运工。侵删。&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+      <category term="Hexo 建站" scheme="http://yoursite.com/tags/Hexo-%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>07 GitHubPage搭建Hexo——Next主题设置背景</title>
+    <link href="http://yoursite.com/2016/11/23/07GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94Next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF/"/>
+    <id>http://yoursite.com/2016/11/23/07GitHubPage搭建Hexo——Next主题设置背景/</id>
+    <published>2016-11-23T11:43:29.000Z</published>
+    <updated>2016-11-29T02:10:44.955Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果有需要我博客中的背景的同学，请参考此文章。</p>
+<h2 id="Next主题设置背景"><a href="#Next主题设置背景" class="headerlink" title="Next主题设置背景"></a>Next主题设置背景</h2><p><strong>声明：功能效果非原创，感谢原作者。我只是互联网的搬运工。侵删。</strong></p>
+<p>第一步： 下载本博客中的 <a href="https://github.com/songwear/songwear.github.io/tree/master/js/src" target="_blank" rel="external"><code>particle.js</code></a></p>
+<p><img src="http://i.imgur.com/Za6cOOR.png" alt=""></p>
+<a id="more"></a>
+<p>第二步： 粘贴到主题文件夹的 <code>source\js\src</code> 路径下。</p>
+<p>第三步： 找到主题文件夹的 <code>layout/_layout.swig</code> 文件，打开。</p>
+<p>第四步： 在最后面增加如下代码,保存即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/particle.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://i.imgur.com/KP88sYo.png" alt=""></p>
+<p>以上。Next主题设置背景完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果有需要我博客中的背景的同学，请参考此文章。&lt;/p&gt;
+&lt;h2 id=&quot;Next主题设置背景&quot;&gt;&lt;a href=&quot;#Next主题设置背景&quot; class=&quot;headerlink&quot; title=&quot;Next主题设置背景&quot;&gt;&lt;/a&gt;Next主题设置背景&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;声明：功能效果非原创，感谢原作者。我只是互联网的搬运工。侵删。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;第一步： 下载本博客中的 &lt;a href=&quot;https://github.com/songwear/songwear.github.io/tree/master/js/src&quot;&gt;&lt;code&gt;particle.js&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Za6cOOR.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+      <category term="Hexo 建站" scheme="http://yoursite.com/tags/Hexo-%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>06 GitHubPage搭建Hexo——日常操作</title>
+    <link href="http://yoursite.com/2016/11/22/06GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4/"/>
+    <id>http://yoursite.com/2016/11/22/06GitHubPage搭建Hexo——日常维护/</id>
+    <published>2016-11-22T15:28:31.000Z</published>
+    <updated>2016-11-29T11:37:30.084Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实在之前的操作中，我们已经使用了很多在日常维护博客时使用的指令。</p>
+<p>如果有其他的需要，请参考<a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">Hexo指令完整版</a>。<strong>一切以官网文档为主</strong></p>
+<hr>
+<p>日常维护：</p>
+<pre><code> GitHubPage搭建Hexo——MarkDown使用
+http://www.snren.com/dispbbs.asp?boardid=19&amp;id=150100
+</code></pre><p>添加网易云音乐</p>
+<pre><code>打开网页版网易云音乐。
+
+如果只是加入单曲，只需要搜索歌曲，点开歌曲名，点击生成外链播放器，复制html代码（可以选择是否自动播放），将html代码无需任何修改放入markdown文章里就OK了。
+
+如果想要加入歌单，就需要自己创建歌单，然后分享歌单，找到自己的分享动态，点进去可以看到有“生成外链播放器”这些字眼，其余操作就和上面一样了。不过，你的歌单有变化的话，这个外链的歌曲同样跟着变，这一点挺棒的。
+
+例如，播放待你长发及腰这首歌，自动播放只需要嵌入一下代码
+
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;http://music.163.com/outchain/player?type=2&amp;id=28947001&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+</code></pre><p>嵌入不自动播放只需要把以上代码中的auto改为=0即可，样子是这样的    </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;其实在之前的操作中，我们已经使用了很多在日常维护博客时使用的指令。&lt;/p&gt;
+&lt;p&gt;如果有其他的需要，请参考&lt;a href=&quot;https://hexo.io/zh-cn/docs/commands.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;He
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+      <category term="Hexo 建站" scheme="http://yoursite.com/tags/Hexo-%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>05 GitHubPage搭建Hexo——主题推荐</title>
+    <link href="http://yoursite.com/2016/11/21/05GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90/"/>
+    <id>http://yoursite.com/2016/11/21/05GitHubPage搭建Hexo——主题推荐/</id>
+    <published>2016-11-21T15:00:11.000Z</published>
+    <updated>2016-11-29T01:52:19.390Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h2><ul>
+<li>主题选择</li>
+<li>Next主题</li>
+</ul>
+<hr>
+<h2 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h2><p>话不多说，选择主题，请到<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo官网主题部分</a>，这里有很多主题供大家选择，网站偶尔打开会很慢。请耐心等待。其中，点击图片是预览主题的样式，点击主题下面的名字就会跳转到该主题在 GitHub 的地址。具体如何安装及使用方法，都写的很详细。阅读文档的能力应该是具备的。不再多说了。</p>
+<p><img src="http://i.imgur.com/5vbzi1u.png" alt=""></p>
+<a id="more"></a>
+<p><img src="http://i.imgur.com/CW7K7bc.png" alt=""></p>
+<p><img src="http://i.imgur.com/iWzdKl3.png" alt=""></p>
+<p><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的 Hexo 主题? - GitHub - 知乎</a></p>
+<hr>
+<h2 id="Next主题"><a href="#Next主题" class="headerlink" title="Next主题"></a>Next主题</h2><p>我个人推荐大家使用这个主题，原因如下：</p>
+<ul>
+<li>使用手册中文且完整</li>
+<li>使用人数过多，遇到问题方便解决</li>
+<li>我觉得很好看</li>
+<li>使用手册可以帮助你对整体有所了解</li>
+<li>…………</li>
+</ul>
+<p>我个人觉得，如果连文档都懒得看，就此放弃吧。我会在后面的文章中涉及一些能帮助你加强主题的方法。</p>
+<p><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">官方使用手册</a></p>
+<p>以上。主题推荐完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;主题选择&lt;/li&gt;
+&lt;li&gt;Next主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;主题选择&quot;&gt;&lt;a href=&quot;#主题选择&quot; class=&quot;headerlink&quot; title=&quot;主题选择&quot;&gt;&lt;/a&gt;主题选择&lt;/h2&gt;&lt;p&gt;话不多说，选择主题，请到&lt;a href=&quot;https://hexo.io/themes/&quot;&gt;Hexo官网主题部分&lt;/a&gt;，这里有很多主题供大家选择，网站偶尔打开会很慢。请耐心等待。其中，点击图片是预览主题的样式，点击主题下面的名字就会跳转到该主题在 GitHub 的地址。具体如何安装及使用方法，都写的很详细。阅读文档的能力应该是具备的。不再多说了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/5vbzi1u.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>04 GitHubPage搭建Hexo——域名及解析</title>
+    <link href="http://yoursite.com/2016/11/20/04GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E5%9F%9F%E5%90%8D%E5%8F%8A%E8%A7%A3%E6%9E%90/"/>
+    <id>http://yoursite.com/2016/11/20/04GitHubPage搭建Hexo——域名及解析/</id>
+    <published>2016-11-20T10:28:05.000Z</published>
+    <updated>2016-11-29T01:52:18.212Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h2><ul>
+<li>域名的选择</li>
+<li>域名服务商选择</li>
+<li>域名解析</li>
+<li>其他</li>
+</ul>
+<hr>
+<h2 id="域名选择"><a href="#域名选择" class="headerlink" title="域名选择"></a>域名选择</h2><p>都已经到这一步了，使用 GitHub 的二级域名怎么能显得自己牛逼呢。必须注册域名啊！如何选择完全凭个人喜好决定了，你可以试试自己的名字啦、女友的名字啦、各种单词拼音的组合啦。总之，简短有意义就好。在哪儿买都可以，当然建议大家选择一些大的服务商。关于后缀，和本身的名字一样，尽量简短且有意义吧。</p>
+<p>例如我的域名呢，songwear 和我的名字很像啦，后缀 .wang 经好友普及，有<strong>渣男</strong>的意思，心向往之，故选择此域名。(尼玛，前女友并不姓王！！！)</p>
+<a id="more"></a>
+<p><strong>请大家选择的时候，注意首年价格和续费价格！！有些后缀的域名，第二年和首年差很多的！</strong></p>
+<hr>
+<h2 id="服务商选择"><a href="#服务商选择" class="headerlink" title="服务商选择"></a>服务商选择</h2><p>关于服务商的选择，我个人只推荐三家，国内的<a href="https://www.aliyun.com/" target="_blank" rel="external">阿里云</a>(<a href="https://wanwang.aliyun.com/" target="_blank" rel="external">中国万网</a>已经是阿里的了)。国外的<a href="https://sg.godaddy.com/zh/" target="_blank" rel="external">Dogdaddy</a>和<a href="https://www.namecheap.com/" target="_blank" rel="external">Namecheap</a> 。新手如果是纯小白用户，强烈建议选择 <strong>阿里云</strong>，愿意折腾的或者有其他目的的可以选择国外的服务商。当然国内还有百度、腾讯等服务商，我个人没用过，不予评价。</p>
+<p>我对这几家的了解，也是来自网络。仅仅是给大家一个参考吧。简单说一下。(也可以参考：知乎，<a href="https://www.zhihu.com/question/19551906" target="_blank" rel="external">范进</a>的这个回答)</p>
+<h3 id="阿里云"><a href="#阿里云" class="headerlink" title="阿里云"></a>阿里云</h3><p>首先阿里云的价格还是很合理的，与国外的不同，不必考虑再找国内的 DNS 服务商，个人觉得，阿里云在国内的地位是绝对领先的。</p>
+<p><img src="http://i.imgur.com/GTHEUau.png" alt=""></p>
+<h3 id="Dogdaddy"><a href="#Dogdaddy" class="headerlink" title="Dogdaddy"></a>Dogdaddy</h3><p>老牌国际服务商。目前已经有中文界面，支持支付宝付款，有些国内需要备案或者即将备案的域名，国外的服务商是不需要备案的，但是需要国内的DNS服务商来做解析，这时候就需要<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPOD</a>出场了。国外注册的域名需要解析到国内的 DNSPOD，来保证网站在国内的速度。</p>
+<p>DNSPOD 和 Dogdaddy 是两家公司，需分别注册。</p>
+<p><img src="http://i.imgur.com/RlfSY5F.png" alt=""></p>
+<h3 id="Namecheap"><a href="#Namecheap" class="headerlink" title="Namecheap"></a>Namecheap</h3><p>赠送 <strong>whois隐藏</strong> 和 <strong>SSL证书免费一年</strong>，这是全球唯一一家域名注册商能够做到的。至于 whois 信息有没有那么必要隐藏，就仁者见仁啦。稍微提一下，Namecheap 的网站是英文的，支付的话，貌似需要国际信用卡，因此，考虑一下这点。</p>
+<p><img src="http://i.imgur.com/umnJjty.png" alt=""></p>
+<hr>
+<h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><p>在做解析之前，还有两步工作要处理。</p>
+<h3 id="设置CNAME"><a href="#设置CNAME" class="headerlink" title="设置CNAME"></a>设置CNAME</h3><p>回到 Hexo 的根目录的 source 文件夹中，新建文本文档，内容为你的域名，请注意，此处不需要加协议名，如下图：</p>
+<p><img src="http://i.imgur.com/NxGH8cY.png" alt=""></p>
+<p>接下来，将此文件的名字改为，<code>CNAME</code> 后缀也要删除掉</p>
+<p><img src="http://i.imgur.com/9u1wP08.png" alt=""></p>
+<h3 id="设置GitHub-Custum-domain"><a href="#设置GitHub-Custum-domain" class="headerlink" title="设置GitHub Custum domain"></a>设置GitHub Custum domain</h3><p>首先登录 GitHub，选择我们创建的仓库，上面有 <code>setting</code> 按钮，进入仓库设置界面</p>
+<p><img src="http://i.imgur.com/TsLuMTZ.png" alt=""></p>
+<p>在Custom domain输入自己的域名，<code>Save</code> 即可</p>
+<p><img src="http://i.imgur.com/pCV5iLL.png" alt=""></p>
+<p>接下来，就可以去做解析了。</p>
+<h3 id="阿里云添加解析步骤"><a href="#阿里云添加解析步骤" class="headerlink" title="阿里云添加解析步骤"></a>阿里云添加解析步骤</h3><p>话不多说，只要按照下面的图走，一定没问题</p>
+<p><img src="http://i.imgur.com/CvZmrUN.png" alt=""></p>
+<p><img src="http://i.imgur.com/PzpODyL.png" alt=""></p>
+<p><strong>如果是第一次登录，会出现引导界面，选择高级设置即可</strong></p>
+<p><img src="http://i.imgur.com/lozUKWo.png" alt=""></p>
+<p><img src="http://i.imgur.com/ZQz5hvo.png" alt=""></p>
+<p><img src="http://i.imgur.com/Rs5EAro.png" alt=""></p>
+<p><strong>再添加一条主机记录是@的解析，记录类型都代表什么，下面写的很清楚</strong></p>
+<p><img src="http://i.imgur.com/JBCyvj7.png" alt=""></p>
+<p><img src="http://i.imgur.com/frulIco.png" alt=""></p>
+<p><strong>接下来慢慢等待吧，不超过5分钟，就会解析好的。</strong></p>
+<p>最后，打开你的浏览器，输入你注册的域名，即可访问你的博客！</p>
+<h3 id="Dogdaddy-DNSPOD解析步骤"><a href="#Dogdaddy-DNSPOD解析步骤" class="headerlink" title="Dogdaddy+DNSPOD解析步骤"></a>Dogdaddy+DNSPOD解析步骤</h3><p>留个坑，等我再需要域名的时候，去 Dogdaddy 买再截图吧。</p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="nslookup"><a href="#nslookup" class="headerlink" title="nslookup"></a>nslookup</h3><p>完成上述工作，网站还是没有显示。请打开命令提示符，输入 <code>nslookup 你的域名</code></p>
+<pre><code>nslookup songwear.wang
+</code></pre><p><img src="http://i.imgur.com/YPz4ALQ.png" alt=""></p>
+<p>这个时候，才是正常的。</p>
+<h3 id="实名制"><a href="#实名制" class="headerlink" title="实名制"></a>实名制</h3><p>有一些域名注册是需要进行实名认证的，具体请参考淘宝的<a href="https://help.aliyun.com/knowledge_detail/35882.html?spm=a21av.7663245.1998408967.6.ICAdnY" target="_blank" rel="external">这个链接</a>。</p>
+<p>有些域名在国外注册在国内解析也需要实名认证！！！总之，越来越多的域名都需要实名认证了，方便国家管理嘛，你懂的~</p>
+<p><a href="http://blog.dnspod.cn/2014/04/guojiban/" target="_blank" rel="external">[新闻]吴洪声：国外域名注册商域名不许国内解析</a>(愚人节玩笑)</p>
+<p>以上。域名及解析部分已经完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;域名的选择&lt;/li&gt;
+&lt;li&gt;域名服务商选择&lt;/li&gt;
+&lt;li&gt;域名解析&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;域名选择&quot;&gt;&lt;a href=&quot;#域名选择&quot; class=&quot;headerlink&quot; title=&quot;域名选择&quot;&gt;&lt;/a&gt;域名选择&lt;/h2&gt;&lt;p&gt;都已经到这一步了，使用 GitHub 的二级域名怎么能显得自己牛逼呢。必须注册域名啊！如何选择完全凭个人喜好决定了，你可以试试自己的名字啦、女友的名字啦、各种单词拼音的组合啦。总之，简短有意义就好。在哪儿买都可以，当然建议大家选择一些大的服务商。关于后缀，和本身的名字一样，尽量简短且有意义吧。&lt;/p&gt;
+&lt;p&gt;例如我的域名呢，songwear 和我的名字很像啦，后缀 .wang 经好友普及，有&lt;strong&gt;渣男&lt;/strong&gt;的意思，心向往之，故选择此域名。(尼玛，前女友并不姓王！！！)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03 GitHubPage搭建Hexo——部署</title>
+    <link href="http://yoursite.com/2016/11/20/03GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E9%83%A8%E7%BD%B2/"/>
+    <id>http://yoursite.com/2016/11/20/03GitHubPage搭建Hexo——部署/</id>
+    <published>2016-11-20T06:21:59.000Z</published>
+    <updated>2016-11-29T01:52:20.784Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h2><ul>
+<li>修改 config 文件</li>
+<li>部署</li>
+<li>其他</li>
+</ul>
+<hr>
+<h2 id="修改-config-文件"><a href="#修改-config-文件" class="headerlink" title="修改 config 文件"></a>修改 config 文件</h2><p>修改 <code>_config.yml</code> 文件，这个文件存储在 Hexo 的根目录，使用编辑器打开(不建议使用记事本，格式有可能很乱)，直接找到最后面，按照下面格式修改。其中，<code>repository: git@github.com:songwear/songwear.github.io.git</code> 为我们代码存放的地址。<br>因此，将 <code>songwear</code> 换成你GitHub的仓库的名字即可。</p>
+<p><img src="http://i.imgur.com/qjsEMZH.png" alt=""></p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:songwear/songwear.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p><strong>请注意，每个冒号(:)后面都有空格！！！</strong></p>
+<hr>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>输入命令，即可开始提交你生成的文件(即 public 文件夹中的内容)部署到你的 GitHub 仓库中，当提示 <code>INFO Deploy done: git</code> 即提交完成。去刷新你的 GitHub 仓库，就会看到已经有很多文件已经上传进去啦！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+<p>如果之前你是按照我的步骤，一步一步来的话，现在打开浏览器，输入你的仓库名(我的是: <code>songwear.github.io</code> )，就可以访问到你刚刚在本地看到的效果了！</p>
+<p><img src="http://i.imgur.com/5rFxTdH.png" alt=""></p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>如果提交的时候，提示如下信息：</p>
+<p><img src="http://i.imgur.com/muUyx2x.png" alt=""></p>
+<p>那么，你需要执行下面的命令，安装 git 部署工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>安装成功后 ，重新执行 <code>hexo d</code> 即可。</p>
+<p>以上。部署工作已完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;修改 config 文件&lt;/li&gt;
+&lt;li&gt;部署&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;修改-config-文件&quot;&gt;&lt;a href=&quot;#修改-config-文件&quot; class=&quot;headerlink&quot; title=&quot;修改 config 文件&quot;&gt;&lt;/a&gt;修改 config 文件&lt;/h2&gt;&lt;p&gt;修改 &lt;code&gt;_config.yml&lt;/code&gt; 文件，这个文件存储在 Hexo 的根目录，使用编辑器打开(不建议使用记事本，格式有可能很乱)，直接找到最后面，按照下面格式修改。其中，&lt;code&gt;repository: git@github.com:songwear/songwear.github.io.git&lt;/code&gt; 为我们代码存放的地址。&lt;br&gt;因此，将 &lt;code&gt;songwear&lt;/code&gt; 换成你GitHub的仓库的名字即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/qjsEMZH.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>02 GitHubPage搭建Hexo——本地环境搭建</title>
+    <link href="http://yoursite.com/2016/11/19/02GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2016/11/19/02GitHubPage搭建Hexo——本地环境搭建/</id>
+    <published>2016-11-19T14:11:49.000Z</published>
+    <updated>2016-11-29T01:48:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h2><ul>
+<li>安装 Hexo</li>
+<li>初始化</li>
+<li>生成静态页</li>
+<li>本地调试</li>
+<li>与远程库关联(GitHub 仓库)</li>
+<li>其他</li>
+</ul>
+<hr>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><h3 id="第一步：通过-npm-安装-Hexo"><a href="#第一步：通过-npm-安装-Hexo" class="headerlink" title="第一步：通过 npm 安装 Hexo"></a>第一步：通过 npm 安装 Hexo</h3><p>打开我们安装好的 Git Bash 客户端</p>
+<p>输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo -g</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<blockquote>
+<p><a href="https://www.npmjs.com/" target="_blank" rel="external">NPM</a>的全称是 Node Package Manager，是一个 NodeJS 包管理和分发工具，Nodejs 自身提供了基本的模块，但是开发实际应用过程中仅仅依靠这些基本模块则还需要较多的工作。幸运的是，Nodejs 库和框架为我们提供了帮助，让我们减少工作量。但是成百上千的库或者框架管理起来又很麻烦，有了 NPM，可以很快的找到特定服务要使用的包，进行下载、安装以及管理已经安装的包。</p>
+</blockquote>
+<p>经过测试，其实国内的网络环境安装是没问题的。但是，如果有安装过程中遇到的问题，可以考虑<strong>添加淘宝源</strong>，具体添加方法，请参考<a href="https://npm.taobao.org/" target="_blank" rel="external">淘宝 NPM 镜像</a>使用说明部分。暂且不表。</p>
+<h3 id="第二步：创建-Hexo-文件夹"><a href="#第二步：创建-Hexo-文件夹" class="headerlink" title="第二步：创建 Hexo 文件夹"></a>第二步：创建 Hexo 文件夹</h3><p>这个文件夹就是以后我们网站的本地仓库，日常的维护，都将在这个文件夹中进行。熟悉 Git 命令操作的可以通过 Git 命令进行创建。对于不熟悉的同学，我还是建议大家去熟悉一下，还是很方便的。(不了解的同学去手动创建文件夹，然后进入文件夹，右键选择，Git Bash Here，即可)</p>
+<p><strong>请确认，当前目录是我们今后管理Hexo的目录，<code>/d/hexo</code>为当前路径</strong></p>
+<p><img src="http://i.imgur.com/tglbkrw.png" alt=""></p>
+<h3 id="第三步：初始化操作"><a href="#第三步：初始化操作" class="headerlink" title="第三步：初始化操作"></a>第三步：初始化操作</h3><pre><code>$ hexo init
+</code></pre><p>这里将为我们下载 hexo 需要的文件，包括初始主题之类的东西。请在网络状态良好的环境下进行。</p>
+<h3 id="第四步：生成静态页"><a href="#第四步：生成静态页" class="headerlink" title="第四步：生成静态页"></a>第四步：生成静态页</h3><p>生成静态文件和 <code>db.json</code>，生成之后，我们的 <code>public</code> 文件夹下就会生成我们需要的网页。</p>
+<pre><code>$ hexo g
+</code></pre><h3 id="第五步：在本地启动"><a href="#第五步：在本地启动" class="headerlink" title="第五步：在本地启动"></a>第五步：在本地启动</h3><pre><code>$ heso s
+</code></pre><p>此时打开浏览器，在地址栏输入 <code>localhost:4000</code> 即可看到默认的模版页</p>
+<p><strong>注意:此时防火墙会发出警告，允许访问即可</strong></p>
+<p><img src="http://i.imgur.com/cmtsl9p.png" alt=""></p>
+<p><img src="http://i.imgur.com/aenFxQU.png" alt=""></p>
+<hr>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h6 id="端口被占用"><a href="#端口被占用" class="headerlink" title="端口被占用"></a>端口被占用</h6><p>当前面的工作都没出现任何问题，我们访问 localhost:4000 并没有出现 Hexo 的网站。</p>
+<p>首先，请你确认你的服务确实已经开启，即在 Git bash 中显示如下提示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<p>那么，按下Ctrl+C停止</p>
+<p>重新输入，将端口更改为8111，选择一个不常用的端口即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 8111</div></pre></td></tr></table></figure>
+<p>再次打开浏览器，输入新的地址即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localhost:8111</div></pre></td></tr></table></figure>
+<p>以上。本地环境搭建已经完成。我们日常的操作都将在本地调试没有问题后，再进行发布，发布方法将在下一篇介绍。</p>
+<p><a href="https://www.npmjs.com/package/hexo" target="_blank" rel="external">Hexo在npm的地址</a></p>
+<p>下面这条命令是 npm 的地址提供的，我也不太清楚，<code>cli</code>的作用是什么，希望知道的小伙伴可以告诉我。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;安装 Hexo&lt;/li&gt;
+&lt;li&gt;初始化&lt;/li&gt;
+&lt;li&gt;生成静态页&lt;/li&gt;
+&lt;li&gt;本地调试&lt;/li&gt;
+&lt;li&gt;与远程库关联(GitHub 仓库)&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;安装-Hexo&quot;&gt;&lt;a href=&quot;#安装-Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装 Hexo&quot;&gt;&lt;/a&gt;安装 Hexo&lt;/h2&gt;&lt;h3 id=&quot;第一步：通过-npm-安装-Hexo&quot;&gt;&lt;a href=&quot;#第一步：通过-npm-安装-Hexo&quot; class=&quot;headerlink&quot; title=&quot;第一步：通过 npm 安装 Hexo&quot;&gt;&lt;/a&gt;第一步：通过 npm 安装 Hexo&lt;/h3&gt;&lt;p&gt;打开我们安装好的 Git Bash 客户端&lt;/p&gt;
+&lt;p&gt;输入命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo -g&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHub Page" scheme="http://yoursite.com/tags/GitHub-Page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>01 GitHubPage搭建Hexo——准备工作</title>
+    <link href="http://yoursite.com/2016/11/18/01GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/"/>
+    <id>http://yoursite.com/2016/11/18/01GitHubPage搭建Hexo——准备工作/</id>
+    <published>2016-11-18T15:00:07.000Z</published>
+    <updated>2016-11-29T03:51:10.195Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h2><ul>
+<li>注册 GitHub 账号以及新建仓库</li>
+<li>安装 nodeJS 客户端</li>
+<li>安装 Git 客户端</li>
+<li>Git 客户端与 GitHub 账户进行关联</li>
+</ul>
+<hr>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>Github 全球最大的基友平台。国内还有一个 Gitcafe (2016年3月被CODING收购)，都是代码托管平台，当然后者和前者的差距还有很大，后面我们会提到 Gitcafe 。请不要使用 QQ 邮箱注册 Github，至于理由，我会在之后的文章中说明。至于如何注册以及验证邮箱，我就不再赘述，翻译工具已经很强大了。</p>
+<a id="more"></a>
+<h3 id="第一步：新建仓库"><a href="#第一步：新建仓库" class="headerlink" title="第一步：新建仓库"></a>第一步：新建仓库</h3><p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/1.png" alt=""></p>
+<h3 id="第二步：输入需要创建的仓库名"><a href="#第二步：输入需要创建的仓库名" class="headerlink" title="第二步：输入需要创建的仓库名"></a>第二步：输入需要创建的仓库名</h3><p>格式为账号名 <code>.github.io</code> 完成后，创建即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">songwear.github.io</div></pre></td></tr></table></figure>
+<p>之前我已经创建过了，所以系统提示已经存在。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/2.png" alt=""></p>
+<p>就是这么简单，仓库已经创建完成，稍后我们会上传代码。</p>
+<p>P.S.关于仓库的名字，如果后面不想注册域名的话，使用你的仓库名(也就是这个 <code>github</code> 的二级域名)也是可以访问你的博客的。</p>
+<hr>
+<h2 id="NodeJS-环境"><a href="#NodeJS-环境" class="headerlink" title="NodeJS 环境"></a>NodeJS 环境</h2><p>Hexo 是一个基于 Node.js 的静态博客程序。因此我们需要 NodeJS 来安装 Hexo。安装步骤没什么好说的，<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>直接下载安装程序即可，也 <strong>无需</strong> 配置环境变量。(nodejs中已经包含npm无需再次下载)</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/3.png" alt=""></p>
+<hr>
+<h2 id="Git-客户端"><a href="#Git-客户端" class="headerlink" title="Git 客户端"></a>Git 客户端</h2><p>Git 就不多说了，<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">廖雪峰</a>讲的足够好了，我只是讲一下我们常用的操作。</p>
+<h3 id="第一步：安装-Git"><a href="#第一步：安装-Git" class="headerlink" title="第一步：安装 Git"></a>第一步：安装 Git</h3><p>到<a href="https://git-scm.com/downloads" target="_blank" rel="external">官网</a>下载，一切默认，安装即可。成功之后，桌面会多出一个 Git Bash 的快捷方式，以后我们进行版本控制完全靠他了。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/5.png" alt=""></p>
+<h3 id="第二步：设置本地的-Git-账号"><a href="#第二步：设置本地的-Git-账号" class="headerlink" title="第二步：设置本地的 Git 账号"></a>第二步：设置本地的 Git 账号</h3><p>打开 Git Bash，输入下面的命令，表示你这台机器上所有的 Git 仓库都会使用这个账户操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;Your Name&quot;</div><div class="line">$ git config --global user.email &quot;email@example.com&quot;</div></pre></td></tr></table></figure>
+<p>如果需要查看当前设置的用户名和邮箱，分别执行下面的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config user.name</div><div class="line">$ git config user.email</div></pre></td></tr></table></figure>
+<p>如果需要查看当前设置的用户名和邮箱，分别执行下面的操作    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;username&quot;</div><div class="line">$ git config --global user.email &quot;email&quot;</div></pre></td></tr></table></figure>
+<h3 id="第三步：关联-GitHub-账号"><a href="#第三步：关联-GitHub-账号" class="headerlink" title="第三步：关联 GitHub 账号"></a>第三步：关联 GitHub 账号</h3><p>首先在本地生成密钥，存放的路径就是后面显示的地址，如果不做修改</p>
+<p>默认路径为：C:\Users\Administrator.ssh</p>
+<p>输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;你的Github邮箱&quot;</div></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/6.png" alt=""></p>
+<p>接下来提示输入密码，为了应对即使密钥文件不小心泄露了，别人也不能直接利用密钥操作你的 <code>git</code> 帐号这个问题。当然，为了操作方便，直接输入回车，使其为空即可。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/7.png" alt=""></p>
+<p>确认你输入的密码</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/8.png" alt=""></p>
+<p>设置成功</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/9.png" alt=""></p>
+<p>我们进入到本地 <code>C:\Users\Administrator\.ssh</code> 文件夹下,找到 <code>id_rsa.pub</code> 这个文件，使用记事本即可打开，复制全部代码。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/10.png" alt=""></p>
+<p>接下来，打开GitHub，选择 <code>Settings——SSH and GPG keys——New SSH key</code>，将我们刚刚复制的 <code>id_rsa.pub</code> 中的内容粘贴到Key中，Title可以自定义。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/11.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/6.png12" alt=""></p>
+<p>填写完成后，选择按钮 <code>Add SSH key</code>。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/13.png" alt=""></p>
+<p>接下来要求你输入你的 GitHub 密码。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/14.png" alt=""></p>
+<p>确认后，将会显示下图效果。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/15.png" alt=""></p>
+<p>以上，GitHub 上的工作就完成了。</p>
+<p>回到 Git 中，输入下面的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
+<p>当你第一次使用 Git 的 clone 或者 push 命令连接 GitHub 时，会得到一个<strong>SSH警告</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host &apos;github.com (xx.xx.xx.xx)&apos; can&apos;t be established.</div><div class="line">RSA key fingerprint is xx.xx.xx.xx.xx.</div><div class="line">Are you sure you want to continue connecting (yes/no)?</div></pre></td></tr></table></figure>
+<p>这是因为 Git 使用 SSH 连接，而 SSH 连接在第一次验证 GitHub 服务器的 Key 时，需要你确认 GitHub 的 Key 的指纹信息是否真的来自 GitHub 的服务器，输入<code>yes</code>回车即可。</p>
+<p>Git 会输出一个警告，告诉你已经把 GitHub 的 Key 添加到本机的一个信任列表里了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Warning: Permanently added &apos;github.com&apos; (RSA) to the list of known hosts.</div></pre></td></tr></table></figure>
+<p>这个警告只会出现一次，后面的操作就不会有任何警告了。</p>
+<p><img src="https://raw.githubusercontent.com/songwear/MarkdownPhoto/master/build/01GitHubPage_Hexo/16.png" alt=""></p>
+<p>关于 SSH 警告这部分内容，是出自<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000" target="_blank" rel="external">廖雪峰老师的添加远程库部分</a></p>
+<p>这样我们的本地的 Git 和 Github 账户就关联成功了。</p>
+<p>以上。准备工作已经完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;注册 GitHub 账号以及新建仓库&lt;/li&gt;
+&lt;li&gt;安装 nodeJS 客户端&lt;/li&gt;
+&lt;li&gt;安装 Git 客户端&lt;/li&gt;
+&lt;li&gt;Git 客户端与 GitHub 账户进行关联&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h2&gt;&lt;p&gt;Github 全球最大的基友平台。国内还有一个 Gitcafe (2016年3月被CODING收购)，都是代码托管平台，当然后者和前者的差距还有很大，后面我们会提到 Gitcafe 。请不要使用 QQ 邮箱注册 Github，至于理由，我会在之后的文章中说明。至于如何注册以及验证邮箱，我就不再赘述，翻译工具已经很强大了。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHubPage" scheme="http://yoursite.com/tags/GitHubPage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>00 GitHubPage搭建Hexo——前言</title>
+    <link href="http://yoursite.com/2016/11/17/00GitHubPage%E6%90%AD%E5%BB%BAHexo%E2%80%94%E2%80%94%E5%89%8D%E8%A8%80/"/>
+    <id>http://yoursite.com/2016/11/17/00GitHubPage搭建Hexo——前言/</id>
+    <published>2016-11-17T15:17:12.000Z</published>
+    <updated>2016-11-29T01:08:05.553Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<p>这句话是框架的作者是 <strong><a href="https://github.com/hexojs/hexo" target="_blank" rel="external">@tommy351</a></strong> 对 Hexo 的描述。简单点说，Hexo 是超轻便的基于 Node 的一个静态博客框架，目前我身边很多小伙伴都在使用 Hexo。特别是做前端工作的家伙，好多都在使用静态博客！这个系列绝对是我写的最详细的教程了，希望对大家有所帮助。</p>
+<p>无奈本人并没有苹果电脑，黑苹果我的老爷机也带不动，因此 <strong>本系列文章仅针对Windows用户</strong> 。</p>
+<p>以上。前言部分已经完成。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      Hexo是超轻便的基于Node的一个静态博客框架，目前我身边很多小伙伴都在使用Hexo。特别是做前端工作的家伙，好多都在使用静态博客！这个系列绝对是我写的最详细的教程了，希望对大家有所帮助。
+    
+    </summary>
+    
+      <category term="建站" scheme="http://yoursite.com/categories/build/"/>
+    
+    
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
+    
+      <category term="GitHubPage" scheme="http://yoursite.com/tags/GitHubPage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>心情随笔</title>
+    <link href="http://yoursite.com/2016/11/16/%E4%BD%A0%E5%BF%85%E9%A1%BB%E5%BE%88%E5%8A%AA%E5%8A%9B%EF%BC%8C%E6%89%8D%E8%83%BD%E7%9C%8B%E4%B8%8A%E5%8E%BB%E6%AF%AB%E4%B8%8D%E8%B4%B9%E5%8A%9B/"/>
+    <id>http://yoursite.com/2016/11/16/你必须很努力，才能看上去毫不费力/</id>
+    <published>2016-11-15T17:23:37.000Z</published>
+    <updated>2016-11-29T01:27:16.934Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>首先，感谢推荐给我这个博客系统的家伙，之前上学的时候使用过 wordpress ，我个人觉得还是很好用的哈，插件可以满足我能想到的所有功能。但是被一个很帅的家伙告知，WP 太重了，想想也确实是，现在流行轻量级的东西，于是，入了 Hexo 的坑。感谢他给我一个很棒的机会，可以给很多人去讲关于我知道的 Hexo，反思一下自己讲课水平确实不是很好，浪费了一次这么棒的机会。</p>
+<a id="more"></a>
+<hr>
+<h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><p>我觉得，搭建一个博客并不难，不管用什么系统，什么技术。但是，能坚持去写博客，这个才是最难的。可能是出于对自己讲的不是很清楚的愧疚感，这些天有很多人来问我，关于 Hexo 搭建的问题，其实还是很开心的，大家一起研究还是很好的啊，而且我真的是知无不言，我没遇到的问题，我们一起来解决。辛苦没有白费，很多人的博客都已经搭建好了，我记下了大家的域名，每天回家，我都会去访问大家的域名，但是，并没有在搭建成功之后有接下来的动作，有些人还是默认的主题，有些人已经换过主题了，但是，博客是空的，就好像一个并没有住人的废弃的房子一样。总觉得，之前的辛苦都没什么意义了，<strong>我特别讨厌做没有意义的事情</strong>，房子的意义不是里面的人吗？难道是盖房子的过程？(当然每个人理解不同，也许有人真的只是为了盖房子)所以，希望后面有想入坑的同学，慎重考虑，不要浪费GitHub的空间，不要浪费自己买域名的钱，不要浪费自己的时间。以上。</p>
+<hr>
+<h2 id="剩下的工作"><a href="#剩下的工作" class="headerlink" title="剩下的工作"></a>剩下的工作</h2><p>目前没有增加评论的功能，原因就是上面写的帮助的部分啦，不过我会非常详细的写一份关于我在 Windows 上搭建 Hexo 的详细的教程，一方面是为自己做一个记录，另一方面希望能帮助真正需要的人。</p>
+<p>SEO 的部分暂时还没开始做，这几天一直在折腾主题的事情，现在可以告一段落了。等到网站有了内容，再来做优化。</p>
+<hr>
+<h2 id="心态"><a href="#心态" class="headerlink" title="心态"></a>心态</h2><p>总是希望自己能做到最好，缺往往忽略了时间成本，想学的东西特别多，学的越多，发现自己不会的东西越多，所有人的时间都是一样的，无奈自己也不是天资聪颖之人，甚至有些愚钝，只好依靠更多的时间来堆积，此非长久之计，需妥善处理……</p>
+<p>以上。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      首先，感谢推荐给我这个博客系统的家伙，之前上学的时候使用过 wordpress，我个人觉得还是很好用的哈，插件可以满足我能想到的所有功能。但是被一个很帅的家伙告知，WP 太重了，想想也确实是，现在流行轻量级的东西，于是，入了Hexo的坑。感谢他给我一个很棒的机会，可以给很多人去讲关于我知道的 Hexo，反思一下自己讲课水……
+    
+    </summary>
+    
+      <category term="心情" scheme="http://yoursite.com/categories/mood/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/11/11/hello-world/"/>
+    <id>http://yoursite.com/2016/11/11/hello-world/</id>
+    <published>2016-11-11T03:11:11.000Z</published>
+    <updated>2016-11-22T16:31:57.595Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      Hello Hexo！测试文章。
+    
+    </summary>
+    
+      <category term="HelloWorld" scheme="http://yoursite.com/categories/HelloWorld/"/>
+    
+    
+      <category term="HelloWorld" scheme="http://yoursite.com/tags/HelloWorld/"/>
+    
+      <category term="Hello" scheme="http://yoursite.com/tags/Hello/"/>
+    
+  </entry>
+  
+</feed>

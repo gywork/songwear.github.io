@@ -109,7 +109,7 @@ http://www.snren.com/dispbbs.asp?boardid=19&amp;amp;id=150100
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: undefined,
       author: '博主'
     }
   };
@@ -470,6 +470,13 @@ http://www.snren.com/dispbbs.asp?boardid=19&amp;amp;id=150100
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/22/06GitHubPage搭建Hexo——日常维护/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/06GitHubPage搭建Hexo——日常维护/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -583,7 +590,28 @@ http://www.snren.com/dispbbs.asp?boardid=19&amp;id=150100
           
   <div class="comments" id="comments">
     
+      <div class="ds-thread" data-thread-key="2016/11/22/06GitHubPage搭建Hexo——日常维护/"
+           data-title="06 GitHubPage搭建Hexo——日常操作" data-url="http://songwear.wang/2016/11/22/06GitHubPage搭建Hexo——日常维护/">
+      </div>
+    
   </div>
+       <!-- 多说评论框 start -->  
+            <div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div>  
+    <!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"songwear"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
 
 
         </div>
@@ -819,9 +847,28 @@ http://www.snren.com/dispbbs.asp?boardid=19&amp;id=150100
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"songwear"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 

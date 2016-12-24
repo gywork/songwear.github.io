@@ -3,156 +3,22 @@
 
 
     
-    
-    
   <url>
-    <loc>http://songwear.wang/posts/build/20161122ciwnjydt1000oawv68idl0e8c.html</loc>
-    <lastmod>2016-11-29T11:37:30.084Z</lastmod>
-    <data>
-        <display>
-        <title>06 GitHubPage搭建Hexo——日常操作</title>
-        <pubTime>2016-11-22T15:28:31.000Z</pubTime>
-        
-        <tag>GitHub Page</tag>
-         
-        <tag>Hexo 建站</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161118ciwnjydqb0000awv6jlkekhsz.html</loc>
-    <lastmod>2016-11-29T03:51:10.195Z</lastmod>
-    <data>
-        <display>
-        <title>01 GitHubPage搭建Hexo——准备工作</title>
-        <pubTime>2016-11-18T15:00:07.000Z</pubTime>
-        
-        <tag>Hexo建站</tag>
-         
-        <tag>GitHubPage</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161123ciwnjydsb000hawv6rx0x5xp3.html</loc>
-    <lastmod>2016-11-29T03:19:45.297Z</lastmod>
-    <data>
-        <display>
-        <title>09 GitHubPage搭建Hexo——Next主题增加Fork me on github</title>
-        <pubTime>2016-11-23T12:17:00.000Z</pubTime>
-        
-        <tag>GitHub Page</tag>
-         
-        <tag>Hexo 建站</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161123ciwnjydth000uawv6c7lg1egy.html</loc>
-    <lastmod>2016-11-29T02:14:13.186Z</lastmod>
-    <data>
-        <display>
-        <title>08 GitHubPage搭建Hexo——Next主题增加页面抖动</title>
-        <pubTime>2016-11-23T11:51:22.000Z</pubTime>
-        
-        <tag>GitHub Page</tag>
-         
-        <tag>Hexo 建站</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161123ciwnjydru000bawv62n1k2frw.html</loc>
-    <lastmod>2016-11-29T02:10:44.955Z</lastmod>
-    <data>
-        <display>
-        <title>07 GitHubPage搭建Hexo——Next主题设置背景</title>
-        <pubTime>2016-11-23T11:43:29.000Z</pubTime>
-        
-        <tag>GitHub Page</tag>
-         
-        <tag>Hexo 建站</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161120ciwnjyds2000dawv6cln6xskp.html</loc>
-    <lastmod>2016-11-29T01:52:20.784Z</lastmod>
-    <data>
-        <display>
-        <title>03 GitHubPage搭建Hexo——部署</title>
-        <pubTime>2016-11-20T06:21:59.000Z</pubTime>
-        
-        <tag>Hexo建站</tag>
-         
-        <tag>GitHub Page</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/build/20161121ciwnjydri0008awv6ey8c9hly.html</loc>
-    <lastmod>2016-11-29T01:52:19.390Z</lastmod>
+    <loc>http://songwear.wang/posts/hexo/20161121cix0f99y800098ov620k1qba8.html</loc>
+    <lastmod>2016-12-22T17:16:20.903Z</lastmod>
     <data>
         <display>
         <title>05 GitHubPage搭建Hexo——主题推荐</title>
         <pubTime>2016-11-21T15:00:11.000Z</pubTime>
         
-        <tag>Hexo建站</tag>
+        <tag>GitHubPage</tag>
          
-        <tag>GitHub Page</tag>
+        <tag>Hexo</tag>
          
          
            
              
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
           
         </display>
     </data>
@@ -160,21 +26,109 @@
 
     
   <url>
-    <loc>http://songwear.wang/posts/build/20161120ciwnjydrd0007awv6mgqipvgl.html</loc>
-    <lastmod>2016-11-29T01:52:18.212Z</lastmod>
+    <loc>http://songwear.wang/posts/hexo/20161122cix0f99yi000b8ov6l016racr.html</loc>
+    <lastmod>2016-12-22T17:16:15.149Z</lastmod>
+    <data>
+        <display>
+        <title>06 GitHubPage搭建Hexo——日常操作</title>
+        <pubTime>2016-11-22T15:28:31.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161123cix0f99yo000f8ov6ukaku265.html</loc>
+    <lastmod>2016-12-22T17:16:10.428Z</lastmod>
+    <data>
+        <display>
+        <title>07 搭建Hexo——Next主题设置背景</title>
+        <pubTime>2016-11-23T11:43:29.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161123cix0f99yw000i8ov6l0kaneqd.html</loc>
+    <lastmod>2016-12-22T17:16:02.701Z</lastmod>
+    <data>
+        <display>
+        <title>08 搭建Hexo——Next主题增加页面抖动</title>
+        <pubTime>2016-11-23T11:51:22.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161123cix0f99z1000m8ov66u42w968.html</loc>
+    <lastmod>2016-12-22T17:14:22.827Z</lastmod>
+    <data>
+        <display>
+        <title>09 搭建Hexo——Next主题增加Fork me on github</title>
+        <pubTime>2016-11-23T12:17:00.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161120cix0f99y300068ov6lqbq7s6b.html</loc>
+    <lastmod>2016-12-22T17:14:17.552Z</lastmod>
     <data>
         <display>
         <title>04 GitHubPage搭建Hexo——域名及解析</title>
         <pubTime>2016-11-20T10:28:05.000Z</pubTime>
         
-        <tag>Hexo建站</tag>
+        <tag>GitHubPage</tag>
          
-        <tag>GitHub Page</tag>
+        <tag>Hexo</tag>
          
          
            
              
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
           
         </display>
     </data>
@@ -182,21 +136,21 @@
 
     
   <url>
-    <loc>http://songwear.wang/posts/build/20161119ciwnjydra0006awv6tt3pqa5c.html</loc>
-    <lastmod>2016-11-29T01:48:06.000Z</lastmod>
+    <loc>http://songwear.wang/posts/hexo/20161119cix0f99xo00048ov699f7va56.html</loc>
+    <lastmod>2016-12-22T17:01:42.770Z</lastmod>
     <data>
         <display>
-        <title>02 GitHubPage搭建Hexo——本地环境搭建</title>
+        <title>02 搭建Hexo——本地环境搭建</title>
         <pubTime>2016-11-19T14:11:49.000Z</pubTime>
         
-        <tag>Hexo建站</tag>
+        <tag>GitHubPage</tag>
          
-        <tag>GitHub Page</tag>
+        <tag>Hexo</tag>
          
          
            
              
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
           
         </display>
     </data>
@@ -204,7 +158,75 @@
 
     
   <url>
-    <loc>http://songwear.wang/posts/mood/20161116ciwnjydtb000rawv6h8dbubx7.html</loc>
+    <loc>http://songwear.wang/posts/hexo/20161120cix0f99xz00058ov6gq79p5mo.html</loc>
+    <lastmod>2016-12-22T17:01:41.334Z</lastmod>
+    <data>
+        <display>
+        <title>03 GitHubPage搭建Hexo——部署</title>
+        <pubTime>2016-11-20T06:21:59.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161118cix0f99xd00018ov6bn4zf6i5.html</loc>
+    <lastmod>2016-12-22T17:01:17.310Z</lastmod>
+    <data>
+        <display>
+        <title>01 搭建Hexo——准备工作</title>
+        <pubTime>2016-11-18T15:00:07.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://songwear.wang/posts/hexo/20161117cix0f99x400008ov6lzm9fvkc.html</loc>
+    <lastmod>2016-12-22T17:01:03.331Z</lastmod>
+    <data>
+        <display>
+        <title>00 搭建Hexo——前言</title>
+        <pubTime>2016-11-17T15:17:12.000Z</pubTime>
+        
+        <tag>GitHubPage</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://songwear.wang/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://songwear.wang/posts/mood/20161116cix0f9a8k001v8ov6gjizxyju.html</loc>
     <lastmod>2016-11-29T01:27:16.934Z</lastmod>
     <data>
         <display>
@@ -224,29 +246,7 @@
 
     
   <url>
-    <loc>http://songwear.wang/posts/build/20161117ciwnjydqp0002awv6xzet5e52.html</loc>
-    <lastmod>2016-11-29T01:08:05.553Z</lastmod>
-    <data>
-        <display>
-        <title>00 GitHubPage搭建Hexo——前言</title>
-        <pubTime>2016-11-17T15:17:12.000Z</pubTime>
-        
-        <tag>Hexo建站</tag>
-         
-        <tag>GitHubPage</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="http://songwear.wang/categories/build/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://songwear.wang/posts/HelloWorld/20161111ciwnjydso000kawv6i72qs9de.html</loc>
+    <loc>http://songwear.wang/posts/HelloWorld/20161111cix0f99z6000o8ov63ayfawmz.html</loc>
     <lastmod>2016-11-22T16:31:57.595Z</lastmod>
     <data>
         <display>
